@@ -36,7 +36,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL:(https://notification-page-rho.vercel.app/)
 
 ## My process
@@ -71,7 +70,7 @@ I'm planning to expand my knowledge of grid and flexbox.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Jacked-99](https://www.frontendmentor.io/profile/Jacked-99)
 
 
 
