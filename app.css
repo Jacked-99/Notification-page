@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Jakarta Sans';
+    src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800;
+}
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --White: hsl(0, 0%, 100%);
+    --Blue: hsl(219, 85%, 26%);
+    --Vlightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --psize: 16px
+}
+
+body {
+    font-family: Jakarta Sans;
+    background-color: var(--Vlightgrayishblue);
+}
+
+.content {
+    margin: 1rem auto;
+    border-radius: 1em;
+    background-color: var(--White);
+}
+
+.notifications {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.notifications h1 {
+    font-size: 1.2rem;
+    margin-right: 0.7rem;
+}
+
+.NotifyNmr {
+    background-color: var(--Blue);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.allread {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.allread:hover {
+    color: var(--Blue);
+}
+
+.post {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.postPicture {
+    height: 100%;
+    width: 4.5vh;
+    align-self: start;
+    margin-left: auto;
+}
+
+.postPicture:hover {
+    background-color: var(--Lightgrayishblue1);
+    box-shadow: 0 0 0.4rem var(--Grayishblue);
+}
+
+.unread {
+    background-color: var(--Vlightgrayishblue);
+    border-radius: 0.5rem;
+}
+
+.profilePicture {
+    height: 5vh;
+    width: 5vh;
+    align-self: start;
+}
+
+.postcontent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.postReaction {
+    color: var(--Darkgrayishblue);
+    font-weight: 800;
+}
+
+.postReaction:hover {
+    color: var(--Blue);
+}
+
+.chessClub {
+    font-weight: 800;
+    color: var(--Blue);
+}
+
+.date {
+    font-weight: 500;
+    color: var(--Grayishblue);
+    display: block;
+    grid-row: 2/3;
+}
+
+.circle {
+    width: 0.5rem;
+    height: 0.5em;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.postcontent p {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    color: var(--Grayishblue);
+    font-weight: 500;
+}
+
+.postcontent p b {
+    font-weight: 800;
+    color: var(--Verydarkblue);
+}
+
+.postcontent p b:hover {
+    color: var(--Blue);
+}
+
+.msg {
+    color: var(--Grayishblue);
+    margin-top: 1rem;
+    font-size: 1em;
+    display: block;
+    border: 1px solid var(--Lightgrayishblue2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.msg:hover {
+    background-color: var(--Lightgrayishblue1);
+}
+
+@media (min-width:700px) {
+    .content {
+        max-width: 60%;
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .content {
+        width: 40%;
+        padding: 1.5rem;
+        margin: 5rem auto;
+    }
+}
